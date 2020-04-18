@@ -42,8 +42,14 @@ camera {
   location  <0.0, 4, -25.0>
   look_at   <0.0, 4.0, 0>
   right     x*image_width/image_height
-}
+}  /*
 
+camera {
+  location  <4.0, 3, -15.0>
+  look_at   <-1.0, 1, -13>
+  right     x*image_width/image_height
+}   
+     */
 
 // general light definition
 light_source {
@@ -209,5 +215,128 @@ sphere { <0,0,0>, 1
        
         
 
-    
-    
+merge{
+
+cylinder { <0,0,0>,<0,2.50,0>, 0.05 
+
+           texture { pigment { color rgb <0.5,0.5,0.5> }
+                   //normal  { bumps 0.5 scale <0.005,0.25,0.005>}
+                     finish  { phong 0.5 reflection{ 0.00 metallic 0.00} } 
+                   } // end of texture
+
+           scale <1,1,1> rotate<0,0,0> translate<-3,0,-14>
+         } // end of cylinder -------------------------------------
+         
+         
+//--------------------------------------------------------------------------
+#include "shapes3.inc"
+//--------------------------------------------------------------------------
+object{ Segment_of_Torus ( 0.5, // radius major, 
+                           0.05, // radius minor, 
+                           -70  // segment angle (in degrees)
+                         ) //-----------------------------------
+        texture { pigment{ color rgb <0.5,0.5,0.5>}  
+                  finish { phong 1}
+                } // end of texture
+        scale <1,1,1> rotate<0,30,90> translate<-3,2.05,-13.75>
+      } // end of Torus_Segment(...) ---------------------------              
+//--------------------------------------------------------------------------
+
+cylinder { <0,0,0>,<0,1.7,0>, 0.05 
+
+           texture { pigment { color rgb<0.5,0.5,0.5> }
+                   //normal  { bumps 0.5 scale <0.005,0.25,0.005>}
+                     finish  { phong 0.5 reflection{ 0.00 metallic 0.00} } 
+                   } // end of texture
+
+           scale <1,1,1> rotate<-30,0,00> translate<-3,1,-12.62>
+         } // end of cylinder -------------------------------------
+         
+         
+cylinder { <0,0,0>,<0,1.7,0>, 0.05 
+
+           texture { pigment { color rgb<0.5,0.5,0.5> }
+                   //normal  { bumps 0.5 scale <0.005,0.25,0.005>}
+                     finish  { phong 0.5 reflection{ 0.00 metallic 0.00} } 
+                   } // end of texture
+
+           scale <1,1,1> rotate<-30,0,00> translate<-3,0.7,-13.15>
+         } // end of cylinder -------------------------------------         
+
+cylinder { <0,0,0>,<0,1.7,0>, 0.05 
+
+           texture { pigment { color rgb<0.5,0.5,0.5> }
+                   //normal  { bumps 0.5 scale <0.005,0.25,0.005>}
+                     finish  { phong 0.5 reflection{ 0.00 metallic 0.00} } 
+                   } // end of texture
+
+           scale <1,1,1> rotate<-30,0,00> translate<-3,0.35,-13.15>
+         } // end of cylinder -------------------------------------            
+
+
+}    
+
+
+merge{
+
+cylinder { <0,0,0>,<0,2.50,0>, 0.05 
+
+           texture { pigment { color rgb <0.5,0.5,0.5> }
+                   //normal  { bumps 0.5 scale <0.005,0.25,0.005>}
+                     finish  { phong 0.5 reflection{ 0.00 metallic 0.00} } 
+                   } // end of texture
+
+           scale <1,1,1> rotate<0,0,0> translate<-3,0,-14>
+         } // end of cylinder -------------------------------------
+         
+         
+//--------------------------------------------------------------------------
+#include "shapes3.inc"
+//--------------------------------------------------------------------------
+object{ Segment_of_Torus ( 0.5, // radius major, 
+                           0.05, // radius minor, 
+                           -70  // segment angle (in degrees)
+                         ) //-----------------------------------
+        texture { pigment{ color rgb <0.5,0.5,0.5>}  
+                  finish { phong 1}
+                } // end of texture
+        scale <1,1,1> rotate<0,30,90> translate<-3,2.05,-13.75>
+      } // end of Torus_Segment(...) ---------------------------              
+//--------------------------------------------------------------------------
+
+cylinder { <0,0,0>,<0,1.7,0>, 0.05 
+
+           texture { pigment { color rgb<0.5,0.5,0.5> }
+                   //normal  { bumps 0.5 scale <0.005,0.25,0.005>}
+                     finish  { phong 0.5 reflection{ 0.00 metallic 0.00} } 
+                   } // end of texture
+
+           scale <1,1,1> rotate<-30,0,00> translate<-3,1,-12.62>
+         } // end of cylinder -------------------------------------
+         
+         
+cylinder { <0,0,0>,<0,1.7,0>, 0.05 
+
+           texture { pigment { color rgb<0.5,0.5,0.5> }
+                   //normal  { bumps 0.5 scale <0.005,0.25,0.005>}
+                     finish  { phong 0.5 reflection{ 0.00 metallic 0.00} } 
+                   } // end of texture
+
+           scale <1,1,1> rotate<-30,0,00> translate<-3,0.7,-13.15>
+         } // end of cylinder -------------------------------------         
+
+cylinder { <0,0,0>,<0,1.7,0>, 0.05 
+
+           texture { pigment { color rgb<0.5,0.5,0.5> }
+                   //normal  { bumps 0.5 scale <0.005,0.25,0.005>}
+                     finish  { phong 0.5 reflection{ 0.00 metallic 0.00} } 
+                   } // end of texture
+
+           scale <1,1,1> rotate<-30,0,00> translate<-3,0.35,-13.15>
+         } // end of cylinder -------------------------------------
+         
+         
+ translate <1.8,0.0,0>                    
+
+
+}    
