@@ -216,7 +216,7 @@ box { <-1.00, 0.00, -1.00>,< 50, 0.01, 13>
             
              texture{ pigment{ color rgb<0.1,0.3,0.5>  }
                  normal { bumps 0.5 scale 0.1 turbulence 0.6}
-                 finish { phong 1 phong_size 20 reflection{ 0.6 } refraction 1.33 }
+                 finish { phong 1 phong_size 20 reflection{ 0.6 } }
                } // end of texture
       
 
@@ -243,9 +243,9 @@ merge{
 
 cylinder { <0,0,0>,<0,2.50,0>, 0.05 
 
-           texture { pigment { color rgb <0.5,0.5,0.5> }
+           texture { pigment { color rgb <0.2,0.2,0.2> }
                    //normal  { bumps 0.5 scale <0.005,0.25,0.005>}
-                     finish  { phong 0.5 reflection{ 0.80 metallic 0.15} } 
+                     finish  { phong 0.5 reflection{ 0.80 metallic 0.5} } 
                    } // end of texture
 
            scale <1,1,1> rotate<0,0,0> translate<-3,0,-14>
@@ -259,8 +259,9 @@ object{ Segment_of_Torus ( 0.5, // radius major,
                            0.05, // radius minor, 
                            -70  // segment angle (in degrees)
                          ) //-----------------------------------
-        texture { pigment{ color rgb <0.5,0.5,0.5>}  
-                  finish { phong 1 reflection{0.80 metallic 0.15}}
+        texture { pigment{color rgb <0.2,0.2,0.2> }
+                   //normal  { bumps 0.5 scale <0.005,0.25,0.005>}
+                     finish  { phong 0.5 reflection{ 0.80 metallic 0.5} }
                 } // end of texture
         scale <1,1,1> rotate<0,30,90> translate<-3,2.05,-13.75>
       } // end of Torus_Segment(...) ---------------------------              
@@ -268,9 +269,9 @@ object{ Segment_of_Torus ( 0.5, // radius major,
 
 cylinder { <0,0,0>,<0,1.7,0>, 0.05 
 
-           texture { pigment { color rgb<0.5,0.5,0.5> }
+           texture {pigment{color rgb <0.2,0.2,0.2> }
                    //normal  { bumps 0.5 scale <0.005,0.25,0.005>}
-                     finish  { phong 0.5 reflection{0.80 metallic 0.15} } 
+                     finish  { phong 0.5 reflection{ 0.80 metallic 0.5} } 
                    } // end of texture
 
            scale <1,1,1> rotate<-30,0,00> translate<-3,1,-12.62>
@@ -279,9 +280,9 @@ cylinder { <0,0,0>,<0,1.7,0>, 0.05
          
 cylinder { <0,0,0>,<0,1.7,0>, 0.05 
 
-           texture { pigment { color rgb<0.5,0.5,0.5> }
+           texture {pigment{color rgb <0.2,0.2,0.2> }
                    //normal  { bumps 0.5 scale <0.005,0.25,0.005>}
-                     finish  { phong 0.5 reflection{ 0.80 metallic 0.15} } 
+                     finish  { phong 0.5 reflection{ 0.80 metallic 0.5} }
                    } // end of texture
 
            scale <1,1,1> rotate<-30,0,00> translate<-3,0.7,-13.15>
@@ -289,9 +290,9 @@ cylinder { <0,0,0>,<0,1.7,0>, 0.05
 
 cylinder { <0,0,0>,<0,1.7,0>, 0.05 
 
-           texture { pigment { color rgb<0.5,0.5,0.5> }
+           texture { pigment{color rgb <0.2,0.2,0.2> }
                    //normal  { bumps 0.5 scale <0.005,0.25,0.005>}
-                     finish  { phong 0.5 reflection{ 0.80 metallic 0.15} } 
+                     finish  { phong 0.5 reflection{ 0.80 metallic 0.5} } 
                    } // end of texture
 
            scale <1,1,1> rotate<-30,0,00> translate<-3,0.35,-13.15>
@@ -306,9 +307,9 @@ merge{
 
 cylinder { <0,0,0>,<0,2.50,0>, 0.05 
 
-           texture { pigment { color rgb <0.5,0.5,0.5> }
+           texture { pigment{color rgb <0.2,0.2,0.2> }
                    //normal  { bumps 0.5 scale <0.005,0.25,0.005>}
-                     finish  { phong 0.5 reflection{ 0.80 metallic 0.15} } 
+                     finish  { phong 0.5 reflection{ 0.80 metallic 0.5} } 
                    } // end of texture
 
            scale <1,1,1> rotate<0,0,0> translate<-3,0,-14>
@@ -322,8 +323,9 @@ object{ Segment_of_Torus ( 0.5, // radius major,
                            0.05, // radius minor, 
                            -70  // segment angle (in degrees)
                          ) //-----------------------------------
-        texture { pigment{ color rgb <0.5,0.5,0.5>}  
-                  finish { phong 1 reflection{0.80 metallic 0.15}}
+        texture { pigment{color rgb <0.2,0.2,0.2> }
+                   //normal  { bumps 0.5 scale <0.005,0.25,0.005>}
+                     finish  { phong 0.5 reflection{ 0.80 metallic 0.5} }
                 } // end of texture
         scale <1,1,1> rotate<0,30,90> translate<-3,2.05,-13.75>
       } // end of Torus_Segment(...) ---------------------------              
@@ -331,9 +333,9 @@ object{ Segment_of_Torus ( 0.5, // radius major,
 
 cylinder { <0,0,0>,<0,1.7,0>, 0.05 
 
-           texture { pigment { color rgb<0.5,0.5,0.5> }
+           texture { pigment{color rgb <0.2,0.2,0.2> }
                    //normal  { bumps 0.5 scale <0.005,0.25,0.005>}
-                     finish  { phong 0.5 reflection{ 0.80 metallic 0.15} } 
+                     finish  { phong 0.5 reflection{ 0.80 metallic 0.5} } 
                    } // end of texture
 
            scale <1,1,1> rotate<-30,0,00> translate<-3,1,-12.62>
@@ -342,9 +344,9 @@ cylinder { <0,0,0>,<0,1.7,0>, 0.05
          
 cylinder { <0,0,0>,<0,1.7,0>, 0.05 
 
-           texture { pigment { color rgb<0.5,0.5,0.5> }
+           texture { pigment{color rgb <0.2,0.2,0.2> }
                    //normal  { bumps 0.5 scale <0.005,0.25,0.005>}
-                     finish  { phong 0.5 reflection{ 0.80 metallic 0.15} } 
+                     finish  { phong 0.5 reflection{ 0.80 metallic 0.5} }
                    } // end of texture
 
            scale <1,1,1> rotate<-30,0,00> translate<-3,0.7,-13.15>
@@ -352,9 +354,9 @@ cylinder { <0,0,0>,<0,1.7,0>, 0.05
 
 cylinder { <0,0,0>,<0,1.7,0>, 0.05 
 
-           texture { pigment { color rgb<0.5,0.5,0.5> }
+           texture { pigment{color rgb <0.2,0.2,0.2> }
                    //normal  { bumps 0.5 scale <0.005,0.25,0.005>}
-                     finish  { phong 0.5 reflection{ 0.80 metallic 0.15} } 
+                     finish  { phong 0.5 reflection{ 0.80 metallic 0.5} } 
                    } // end of texture
 
            scale <1,1,1> rotate<-30,0,00> translate<-3,0.35,-13.15>
@@ -366,10 +368,11 @@ cylinder { <0,0,0>,<0,1.7,0>, 0.05
 
 }
 
+
 // general light definition
 light_source {
   <00,10, -15>      // position of the light source
-  color rgb 0.35     // color of the light
+  color rgb 0.1     // color of the light
   // spotlight
   // cylinder
   // parallel
@@ -394,18 +397,16 @@ light_source {
   
   // light_source { ...
   // put this inside a light_source to add light fading
-  fade_distance 10
-  fade_power 2
+
 } 
 
 // general light definition
 light_source {
-  <00,10, 9>      // position of the light source
-  color rgb 0.2
+  <7,7, -10>      // position of the light source
+  color rgb 0.5
   parallel
-  point_at <0,0,7>
-  fade_distance 20
-  fade_power 10     // color of the light
+  point_at <-7,20,0>
+    // color of the light
   // spotlight
   // cylinder
   // parallel
@@ -433,8 +434,9 @@ light_source {
 
 // general light definition
 light_source {
-  <00,10, 12>      // position of the light source
-  color rgb 1    // color of the light
+  <00,1, 7>      // position of the light source
+  color rgb 0.9
+  // color of the light
   // spotlight
   // cylinder
   // parallel
@@ -459,10 +461,10 @@ light_source {
   
 
 }  
+     
 
 
-
-global_settings{
+/*global_settings{
 
 radiosity
 {
@@ -479,7 +481,7 @@ radiosity
     recursion_limit 3           // Recursion should be near what you want it to be
                                 //  If you aren't sure, start with 3 or 4
     }
-}
+} */
 
 
 
